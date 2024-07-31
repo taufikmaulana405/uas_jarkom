@@ -1,0 +1,11 @@
+# jan/02/1970 00:01:21 by RouterOS 7.3.1
+# software id = 8PQ3-GQC1
+#
+# model = RB941-2nD
+# serial number = D1130C0F1A50
+/interface wireless
+set [ find default-name=wlan1 ] ssid=MikroTik
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/ip dhcp-client
+add interface=ether1
